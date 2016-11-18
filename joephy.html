@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qiaofei</title>
+    <style>
+        body{
+            height:978px;
+        }
+        #box{
+            width:300px;
+            height:300px;
+            background: red;
+            margin:40px;
+        }
+        li{
+            width:100px;
+            height:50px;
+            margin:30px;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="list">
+            <li>nihao</li>
+            <li>nihao</li>
+            <li>nihao</li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="qiaofei.js"></script>
+<script>
+    var $li = DDF("#box");
+    var box = document.getElementById("box");
+
+    console.log($li.css({
+        "color" : "yellow",
+        "position":"relative",
+        "left":"60px"
+
+    }))
+
+    console.log($li.css("position","absolute"))
+
+</script>
+</html>
